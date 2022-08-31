@@ -1,0 +1,31 @@
+[package]
+name = "seventy"
+version = "0.1.0"
+description = "Created with Anchor"
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "seventy"
+
+[programs.localnet]
+seven_eleven= "28MENXAPtRQmZLXmjBEsbVQv6wf1g7KP4KgMHJS5GHuc"
+
+[features]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+cpi = ["no-entrypoint"]
+default = []
+
+[dependencies]
+anchor-lang = "=0.25.0"
+rand_chacha = "=0.3.1"
+rand_seeder = "=0.2.3"
+anchor-spl = "=0.25.0"
+spl-token = { version = "3.1.1", features = ["no-entrypoint"] }
+solana-program = "1.9.29"
+rand_core = "0.6.3"
+num-traits = "0.2"
+num-derive = "0.3"
+solana-security-txt = "1.0.1"

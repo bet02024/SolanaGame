@@ -1,0 +1,12 @@
+[programs.localnet]
+seventy = "28MENXAPtRQmZLXmjBEsbVQv6wf1g7KP4KgMHJS5GHuc"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "localnet"
+wallet = "/Users/beto/.config/solana/id.json"
+
+[scripts]
+test = "mocha -t 1000000 tests/"
